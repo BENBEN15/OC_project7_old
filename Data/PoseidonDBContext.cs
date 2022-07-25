@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using WebApi.Models;
 
-namespace WebApi.Models
+namespace WebApi.Data
 {
     public partial class PoseidonDBContext : DbContext
     {

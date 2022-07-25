@@ -18,7 +18,7 @@ namespace Dot.Net.WebApi.Controllers
         }
 
         [HttpGet("/bidList/validate")]
-        public IActionResult Validate([FromBody]BidList bidList)
+        public IActionResult Validate([FromBody]BidDto bidList)
         {
             // TODO: check data valid and save to db, after saving return bid list
             return View("bidList/add");
@@ -31,7 +31,7 @@ namespace Dot.Net.WebApi.Controllers
         }
 
         [HttpPost("/bidList/update/{id}")]
-        public IActionResult UpdateBid(int id, [FromBody] BidList bidList)
+        public IActionResult UpdateBid(int id, [FromBody] BidDto bidList)
         {
             // TODO: check required fields, if valid call service to update Bid and return list Bid
             return Redirect("/bidList/list");

@@ -1,4 +1,4 @@
-using Dot.Net.WebApi.Data;
+using WebApi.Data;
 using System.Linq;
 using Dot.Net.WebApi.Domain;
 using System;
@@ -8,7 +8,7 @@ namespace Dot.Net.WebApi.Repositories
 {
     public class UserRepository
     {
-        public LocalDbContext DbContext { get; }
+        /*public LocalDbContext DbContext { get; }
 
         public UserRepository(LocalDbContext dbContext)
         {
@@ -33,6 +33,6 @@ namespace Dot.Net.WebApi.Repositories
         public User FindById(int id)
         {
             return null;
-        }
+        }*/
     }
 }

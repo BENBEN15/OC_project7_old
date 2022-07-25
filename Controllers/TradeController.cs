@@ -21,13 +21,13 @@ namespace Dot.Net.WebApi.Controllers
         }
 
         [HttpGet("/trade/add")]
-        public IActionResult AddTrade([FromBody]Trade trade)
+        public IActionResult AddTrade([FromBody]TradeDTO trade)
         {
             return View("trade/add");
         }
 
         [HttpGet("/trade/add")]
-        public IActionResult Validate([FromBody]Trade trade)
+        public IActionResult Validate([FromBody]TradeDTO trade)
         {
             // TODO: check data valid and save to db, after saving return Trade list
             return View("trade/add");
@@ -41,7 +41,7 @@ namespace Dot.Net.WebApi.Controllers
         }
 
         [HttpPost("/trade/update/{id}")]
-        public IActionResult updateTrade(int id, [FromBody] Trade trade)
+        public IActionResult updateTrade(int id, [FromBody] TradeDTO trade)
         {
             // TODO: check required fields, if valid call service to update Trade and return Trade list
             return Redirect("/trade/list");

@@ -20,13 +20,13 @@ namespace Dot.Net.WebApi.Controllers
         }
 
         [HttpGet("/curvePoint/add")]
-        public IActionResult AddCurvePoint([FromBody]CurvePoint curvePoint)
+        public IActionResult AddCurvePoint([FromBody]CurvePointDTO curvePoint)
         {
             return View("curvePoint/add");
         }
 
         [HttpGet("/curvePoint/add")]
-        public IActionResult Validate([FromBody]CurvePoint curvePoint)
+        public IActionResult Validate([FromBody]CurvePointDTO curvePoint)
         {
             // TODO: check data valid and save to db, after saving return bid list
             return View("curvePoint/add"    );
@@ -40,7 +40,7 @@ namespace Dot.Net.WebApi.Controllers
         }
 
         [HttpPost("/curvepoint/update/{id}")]
-        public IActionResult UpdateCurvePoint(int id, [FromBody] CurvePoint curvePoint)
+        public IActionResult UpdateCurvePoint(int id, [FromBody] CurvePointDTO curvePoint)
         {
             // TODO: check required fields, if valid call service to update Curve and return Curve list
             return Redirect("/curvepoint/list");

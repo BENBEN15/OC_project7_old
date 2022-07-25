@@ -22,13 +22,13 @@ namespace Dot.Net.WebApi.Controllers
         }
 
         [HttpGet("/rating/add")]
-        public IActionResult AddRatingForm([FromBody]Rating rating)
+        public IActionResult AddRatingForm([FromBody]RatingDTO rating)
         {
             return View("rating/add");
         }
 
         [HttpGet("/rating/add")]
-        public IActionResult Validate([FromBody]Rating rating)
+        public IActionResult Validate([FromBody]RatingDTO rating)
         {
             // TODO: check data valid and save to db, after saving return Rating list
             return View("rating/add");
@@ -42,7 +42,7 @@ namespace Dot.Net.WebApi.Controllers
         }
 
         [HttpPost("/rating/update/{id}")]
-        public IActionResult updateRating(int id, [FromBody] Rating rating)
+        public IActionResult updateRating(int id, [FromBody] RatingDTO rating)
         {
             // TODO: check required fields, if valid call service to update Rating and return Rating list
             return Redirect("/rating/list");
