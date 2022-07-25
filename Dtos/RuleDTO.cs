@@ -1,4 +1,4 @@
-namespace Dot.Net.WebApi.Controllers
+namespace WebApi.Dtos
 {
     public class RuleDTO
     {

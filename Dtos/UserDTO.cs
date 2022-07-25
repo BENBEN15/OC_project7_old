@@ -1,4 +1,4 @@
-namespace Dot.Net.WebApi.Domain
+namespace WebApi.Dtos
 {
     public class UserDTO
     {

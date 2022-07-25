@@ -1,6 +1,6 @@
 using System;
 
-namespace Dot.Net.WebApi.Domain
+namespace WebApi.Dtos
 {
     public class TradeDTO
     {

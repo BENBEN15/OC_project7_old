@@ -1,8 +1,8 @@
 using System;
 
-namespace Dot.Net.WebApi.Domain
+namespace WebApi.Dtos
 {
-    public class BidDto
+    public class BidDTO
     {
         // TODO: Map columns in data table BIDLIST with corresponding fields
         public int BidId { get; set; }
